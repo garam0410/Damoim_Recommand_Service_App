@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        tools:context=".login.RegisterActivity_sub">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            tools:context=".login.RegisterActivity_sub"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.139"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.135">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/writeAge"
+                android:layout_width="120dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="@+id/textView11">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="세"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/writeAge"
+                app:layout_constraintStart_toEndOf="@+id/writeAge"
+                app:layout_constraintTop_toTopOf="@+id/writeAge">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/selectJob"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="직업"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관심사 선택"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.501">
+
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/policy_StartUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="창업"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/policy_Employment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="취업"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/policy_StartUp"
+                app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/policy_PolicyParticipation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="정책참여"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/policy_Employment"
+                app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/policy_LivingWelfare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="생활복지"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/policy_StartUp">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/policy_HousingSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="주거지원"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/policy_LivingWelfare"
+                app:layout_constraintTop_toBottomOf="@+id/policy_Employment">
+
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/policy_Corona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="코로나"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/policy_HousingSupport"
+                app:layout_constraintTop_toBottomOf="@+id/policy_PolicyParticipation" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <EditText
+                android:id="@+id/usedPolicy"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/addPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:text="+"
+                android:textSize="20dp">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:orientation="horizontal">
+
+            <ListView
+                    android:id="@+id/usedPolicyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#000000">
+
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1"></View>
+
+            <Button
+                android:id="@+id/backStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로가기" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"></View>
+
+            <Button
+                android:id="@+id/registerComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원가입 완료" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1"></View>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
